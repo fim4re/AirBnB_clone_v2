@@ -22,7 +22,7 @@ def hello():
 
 
 @app.route('/c/<text>')
-def c_text(text):
+def c_text(texts):
     """ replace it with variable. """
     texts = texts.replace('_', ' ')
     return 'C {}'.format(texts)
