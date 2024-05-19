@@ -2,7 +2,7 @@
 """ 2. Script to start a Flask web application with 3 view functions """
 
 from flask import Flask
-#create flask
+# create flask
 
 
 app = Flask(__name__)
