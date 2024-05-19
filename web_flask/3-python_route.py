@@ -2,7 +2,7 @@
 """ redirects and has default val for variable """
 
 from flask import Flask
-#create flask
+# create flask
 
 
 app = Flask(__name__)
