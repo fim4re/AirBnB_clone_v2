@@ -22,18 +22,18 @@ def hello():
 
 
 @app.route('/c/<text>')
-def c_text(texts):
+def c_text(text):
     """ replace it with variable. """
-    texts = texts.replace('_', ' ')
-    return 'C {}'.format(texts)
+    text = text.replace('_', ' ')
+    return 'C {}'.format(text)
 
 
 @app.route('/python/')
 @app.route('/python/<text>')
-def python_text(texts='is cool'):
+def python_text(text='is cool'):
     """ replace text with another variable. """
-    texts = texts.replace('_', ' ')
-    return 'Python {}'.format(texts)
+    text = text.replace('_', ' ')
+    return 'Python {}'.format(text)
 
 
 @app.route('/number/<int:n>')
