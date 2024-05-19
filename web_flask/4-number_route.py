@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" 4. Add fourth view function that displays var only if is integer """
+"""displays var only if is integer """
 
 from flask import Flask
 # create flask
@@ -37,10 +37,10 @@ def python_text(text='is cool'):
 
 
 @app.route('/number/<int:n>')
-def number_text(m):
+def number_text(n):
     """ replace int only if given int. """
-    m = str(m)
-    return '{} is a number'.format(m)
+    n = str(n)
+    return '{} is a number'.format(n)
 
 
 if __name__ == '__main__':
